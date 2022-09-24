@@ -11,7 +11,7 @@ body{background-color: #272424;}
     "main main nav"
     "footer footer nav";
 }
-header{margin:5px; border: 3px solid black; grid-area: header;}
+
 nav{grid-area: nav;
     margin:5px;
     border: 2px solid black;
@@ -20,10 +20,7 @@ nav{grid-area: nav;
     height: 50px;
     position: sticky;
     top:0%; 
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;     */
+   
     
   
 }
@@ -110,9 +107,10 @@ li a.active, li a:hover{
     opacity: 0;
     
 }
-.barrasMenu input {
-    margin-top: 70px;
+.barrasMenu {
+    margin-top: 8s0px;
 }
+
  .hamburguesa,
  .barrasMenu {
     display: none;
@@ -172,19 +170,28 @@ nav .nav input:checked ~ .ulC {
     }
 }
 main{margin:5px; border: 3px solid black; grid-area: main;}
-footer{margin:5px; border: 3px solid black; grid-area:footer;}
-#grillaMain{display: grid;
+
+#grillaMain{
+    display: grid;
     grid-template-areas:
     "tituloH2 tituloH2"
     "parrafoIzq containerInfo";}
-.tituloH2 {margin:5px; border: 3px solid black; grid-area: tituloH2; background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../multimedia/imagenes/murcielagosByn.jpg); color: rgb(186, 6, 241); text-align: center; padding: 10%; background-repeat: no-repeat; background-size: cover; background-position: center ;}
-.parrafoIzq {margin:5px; border: 3px solid black; grid-area: parrafoIzq; text-align: center; padding: 10%;}
-.containerInfo {margin:5px; border: 3px solid black; grid-area: containerInfo;}
+
+.tituloH2 {
+    margin:5px; border: 3px solid black; grid-area: tituloH2; background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../multimedia/imagenes/murcielagosByn.jpg); color: rgb(186, 6, 241); text-align: center; padding: 10%; background-repeat: no-repeat; background-size: cover; background-position: center ;}
+
+
+.parrafoIzq {
+    margin:5px; border: 3px solid black; grid-area: parrafoIzq; text-align: center; padding: 10%; background-image: url(../multimedia/imagenes/batman_cabeza.jpg); background-repeat: no-repeat; background-size: cover; background-position: center ;}
+
+
+.containerInfo {
+    margin:5px; border: 3px solid black; grid-area: containerInfo;}
     
 
 
 
-header{
+header{margin:5px; border: 3px solid black; grid-area: header;
     padding: 0%;
     width:100%;
     height: 125px;
@@ -234,36 +241,37 @@ p{
     font-style: inherit;
     font-family:'Gotham Black', sans-serif;
     height: 100%;
-    width: 70%;
-    margin-left: 25%;
+    width: auto;
+   
     color: rgb(255, 255, 255);
     background-color: #793a9200;
 }
 input:hover{
    border-style:groove;
-    border-radius: 10px;
+    
     background-color:#8E05C2;
     transition: 0,5s;
 }
 input{
     border-style: hidden;
     width: 100%;
+    height: 100%;
     text-align: center center;
     font-size: 40px;
     color: white;
     font-family:'Gotham Black', sans-serif;
     background-color:#3E065F;
-    border-radius: 10px;
+    
 }
   
-footer{
-    height: 60px;
-    
+footer{margin:5px; border: 3px solid black; grid-area:footer;
+    height: 20vh;
+    text-align: center; 
 
 
 }
 footer a{
-text-align: center;
+
 align-items: center;
 
 }
@@ -279,12 +287,16 @@ footer a img {
 footer .titulo-footer{
     font-size: 20px;
     font-family: 'Gotham Black', sans-serif;
+    color: aliceblue;
 }
 a .enlace-redes{
     font-size: 10px;
     font-family:'Gotham Black', sans-serif;
 
+   
+
 }
+    /* productos */
 #galeriaFotos {
     width: 100%;
     height: auto;
@@ -407,4 +419,107 @@ h5{
     font-size: 60px;
     background-color: green;
 
-} 
+}
+#grillaProductos{
+    
+    display: grid;
+    grid-template-areas:
+    "galeriaFotos" 
+    "galeriaFotos"
+    "galeriaVideos" 
+    "galeriaVideos";
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    align-content: space-between;
+    border:  3px solid#fff;
+    
+
+    }
+    main {
+        height: 80%;
+        width: 100%;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    section .galeria {
+       
+        border: 10px solid green;
+        
+    }
+    section .galeria .foto {
+        overflow: auto;
+    }
+    section .galeria .pie{
+        overflow: auto;
+    }
+
+    section .galeria .video{
+       border: 3px  solid   red;
+        overflow: hidden;
+
+    }
+
+
+
+ /* .header1{
+margin:5px; border: 3px solid black; grid-area: header1;
+    padding: 0%;
+    width:100%;
+    height: 125px;
+    background-image:url(../multimedia/imagenes/batman_principal.jpg);
+    background-repeat: no-repeat;
+    background-size: 125%;
+    position: sticky;
+    bottom: 0;
+}.nav1 {
+    grid-area: nav1;
+    margin:5px;
+   
+    background: linear-gradient(to right, #000000, rgb(3, 133, 68));
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top:0%; 
+}
+main#grillaProductos{
+    display: grid;
+    grid-template-areas: 
+    "galeriaFotos galeriaFotos"
+    "galeriaVideos galeriaVideos";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px;
+    }
+    section#galeriaFotos{
+        grid-area: galeriaFotos ;
+        padding: 10px;
+    }
+   
+    #galeriaFotos{
+       border: 3px  solid   white
+        width: 100%;
+        height: 100px;
+        
+    }
+    #galeriaFotos .galeria .foto {
+      
+        border: solid white;
+        width: 100% ;
+        height: auto;
+        overflow: hidden;
+        ;
+    }
+   main section div.galeria {
+    width: 100%;
+    height: 500px;
+   } section#galeriaVideos{
+    grid-area: galeriaVideos;
+
+}
+
+    
+    .footer1 {margin:5px; border: 3px solid black; grid-area:footer1;
+        height: 20vh;
+        text-align: center; } */

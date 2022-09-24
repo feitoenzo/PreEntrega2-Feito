@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman Company</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../multimedia/iconos/batman_icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./multimedia/iconos/batman_icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
-    <header>
-        <a href="../index.html">
+<body id="bodyP">
+    <header id="grillaHeader" class="header1">
+        <a href="./index.html">
             <div class="containerTitulo">
-                <h1>Batman Academy</h1>
+                <h1>BTM Co.</h1>
                 <h3>Logistica, entrenamiento y más</h3>
             </div>
         </a>
     </header>
     <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
+        <div class="nav">
+        <input type="checkbox" class="barrasMenu">
+        <div class="hamburguesa"></div>
+            <ul class="ulC">
+                <li><a href="../index.html">Inicio</a></li>
             <li><a class="active" href="./productos.html">Productos</a></li>
             <li><a href="./contactos.html">Contactos</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="./prox.html" >?</a></li>
-        </ul>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <section id="galeriaFotos">
-            <div class="galeria">
+    <main id="grillaProductos" class="main1">
+        <section id="galeriaFotos" class="section1">
+            <div class="galeria" >
                 <div class="foto">
-                    <img src="../multimedia/imagenes/batimovil.jpg" alt="batimovil">
+                    <img class="animate__animated animate__fadeInDown" src="../multimedia/imagenes/batimovil.jpg" alt="batimovil">
                 </div>
                 <div class="pie">
                     <p class="color-acento">VEHICULOS</p>
@@ -40,41 +44,47 @@
             </div>
             <div class="galeria">
                 <div class="foto">
-                    <img src="../multimedia/imagenes/set_completo.jpg" alt="Paso2">
+                    <img class="animate__animated animate__fadeInDown" src="../multimedia/imagenes/set_completo.jpg" alt="Paso2">
                 </div>
                 <div class="pie">
                     <p class="color-acento">ARMAMENTO Y SETS</p>
                   
                 </div>
             </div>
-            
+        </section> 
+        <section id="galeriaVideos" class="section2">   
             <div class="galeria">
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bg9w1YIOH14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%"  src="https://www.youtube.com/embed/Bg9w1YIOH14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                 </div>
                 <div class="pie">
                     <p class="color-acento">PRIMERA CLASE GRATIS</p>
-                    </div>
-            </div>
-            <div class="galeria">
-                
-                <div class="pie">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bYUdYGr9Czk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="color-acento">Nuestra guia PREMIUM</p>
-                    
                 </div>
             </div>
-          
+            <div class="galeria">
+                 <div class="video">
+                    <iframe width="100%" src="https://www.youtube.com/embed/bYUdYGr9Czk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>   
+                 <div>
+                    <div class="pie">
+                        <p class="color-acento">Nuestra guia PREMIUM</p>
+                    </div>
+                    
+                 </div>   
+                    
+                
+            </div>
+        </section>
         
     </main>
-    <footer>
+    <footer class="footer">
         <h4 class=" titulo-footer">NUESTRAS REDES:</h4>
         <a href="https://twitter.com/" target="_blank">
-            <img src="../multimedia/iconos/twitter_icono.png" alt="Seguinos en twitter">
+            <img src="multimedia/iconos/twitter_icono.png" alt="Seguinos en facebook">
             <h4 class="enlace-redes">SEGUINOS EN TWITTER</h4>
         </a>
         <a href="https://facebook.com" target="_blank">
-            <img src="../multimedia/iconos/facebook_icono.png" alt="Seguinos en facebook">
+            <img src="multimedia/iconos/facebook_icono.png" alt="Seguinos en twitter">
             <h4 class="enlace-redes">SEGUINOS EN FACEBOOK</h4>
         </a>
     </footer>
