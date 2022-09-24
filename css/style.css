@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000; 
+    color: white;
+}
+.container_logo{
+    position: sticky;
+    padding: 0%;
+    width: 50px;
+    height: 50px;
+}
+.container_logo img{
+    height: 50px;
+    width: 50px;
+
+}
+header{
+    padding: 0%;
+    width:100%;
+    height: 125px;
+    background-image:url(../multimedia/imagenes/batman_principal.jpg);
+    background-repeat: no-repeat;
+    background-size: 125%;
+    position: sticky;
+    bottom: 0;
+
+}
+header a{
+    text-decoration: none;
+    margin-top: 50px;
+}
+header a .containerTitulo{
+    text-align: center;
+    margin-top: 50px;
+   
+
+}
+header .containerTitulo h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Gotham Black', sans-serif;
+}
+header .containerTitulo h3{
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+header .containerTitulo a{
+    width: 100%;
+}
+nav{
+    background-color:#3E065F;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top:0%     
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px ;
+    margin: 0   5px;
+    
+}
+nav ul li a {
+
+   font-family: 'Gotham Black', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    text-transform: uppercase;  
+}
+header .cotainer_imagen{
+    width: 100%;
+    height: 900px;
+}
+.container_imagen .imgPrincipal{
+    height: 500px;
+    width: 1000px;
+
+}
+
+
+li a.active1, li a:hover{
+    transition: 0.5s;
+    background-color: lawngreen;
+} 
+li a.active, li a:hover{
+    transition: .5s;
+    background-color: blueviolet;
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-color: #3E065F;
+}
+section .column{
+    float:left;
+    width: 100%;
+    height: 70%;
+    
+    background-color: #700B97;
+    padding: 10px;
+    border-radius: 10px
+    
+}
+section .column div{
+    
+    display: flex;
+    justify-content: center;
+    justify-content:space-between;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+section .column-left{
+   border-style:groove;
+    background-color:#700B97;
+    width: 65%;
+    padding: 10px;
+
+}
+section .column-right{
+   
+    background-color:#3E065F;
+    width: 15%;
+    
+}
+h2{
+    text-align: center;
+    color:black;
+    background-color:#700B97;
+    
+    font-size: 50px;
+}
+p{
+  text-align: center;
+    font-style: inherit;
+    font-family:'Gotham Black', sans-serif;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    color: black;
+    background-color: #700B97;
+}
+input:hover{
+   border-style:groove;
+    border-radius: 10px;
+    background-color:#8E05C2;
+    transition: 0,5s;
+}
+input{
+    border-style: hidden;
+    width: 100%;
+    text-align: center center;
+    font-size: 40px;
+    color: white;
+    font-family:'Gotham Black', sans-serif;
+    background-color:#3E065F;
+    border-radius: 10px;
+}
+  
+footer{
+    height: 60px;
+    
+
+
+}
+footer a{
+text-align: center;
+align-items: center;
+
+}
+footer a img {
+   display: block;
+   margin: auto;
+   
+    padding: 3px;
+    width: 40px;
+    height: 40px; 
+    
+}
+footer .titulo-footer{
+    font-size: 20px;
+    font-family: 'Gotham Black', sans-serif;
+}
+a .enlace-redes{
+    font-size: 10px;
+    font-family:'Gotham Black', sans-serif;
+
+}
+#galeriaFotos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#galeriaFotos p {    
+    border-radius: 5px;
+    box-shadow: inset #000000 0px 0px 5px 1px;
+    background-color: #700B97;
+    border: 1px solid #8E05C2; 
+    padding: 5px;
+}
+
+.galeria {
+    margin: 10px 10px;
+    box-shadow: 0px 4px 10px 0 #8E05C2;
+    width:33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+.pie {
+    text-align: center;
+    padding: 5px;
+} 
+
+.pie li {
+    margin: 5px;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+
+.galeria .pie .color-acento{
+    font-family:'Gotham Black', sans-serif;
+}
+    
+.mensaje {
+    background: #8E05C2;
+    height: 100px;
+    width: 100%;
+}
+.formulario{
+    background-color: #700B97;
+    
+}
+b  {
+    display: block;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    
+    }
+.comunicate{
+    display: block;
+    text-align: center;
+    align-items: center;
+
+}
+h6{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+.b1{
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+}
+.b2{
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+
+}
+.sectionNosotros{
+    height: 1000px;
+    width: 100%;
+    background-image: url(../multimedia/imagenes/fondo-nosotros.jpg);
+}
+.nosotrosParrafo{
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Gotham Black', sans-serif;
+    font-style: oblique;
+    color: aliceblue;
+}
+h5{
+    text-align: center;
+    background-color: transparent;
+    font-size: 60px;
+    font-family: 'Gotham Black', sans-serif;
+    font-style: oblique;
+    color: aliceblue;
+}
+.main-hack{
+    height: 1000px;
+    background-image: url(../multimedia/imagenes/riddle_back.jpg);
+}
+.container_parrafo_nygma{
+    display: block;
+    align-items: center;
+}
+.parrafo_nygma{
+    font-family: 'Gotham Black', sans-serif;
+    position: relative;
+    left: 20%;
+    font-size: 60px;
+    background-color: green;
+
+}
