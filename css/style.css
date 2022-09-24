@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+body{background-color: #272424;}
 #grillabody{display: grid;
     grid-template-areas: 
     "header header nav"
@@ -13,7 +15,7 @@ header{margin:5px; border: 3px solid black; grid-area: header;}
 nav{grid-area: nav;
     margin:5px;
     border: 2px solid black;
-    background: linear-gradient(to right, #3E065F, rgb(3, 133, 68));
+    background: linear-gradient(to right, #000000, rgb(3, 133, 68));
     width: 100%;
     height: 50px;
     position: sticky;
@@ -36,6 +38,7 @@ nav ul {
     align-items: center;
     z-index: 1;
     transition: .5s;
+    margin-left: 20px;
     
     
    
@@ -43,8 +46,8 @@ nav ul {
 nav ul li{
     display: inline-block;
     line-height: 50px ;
-     margin: 5px   5px;  
-     list-style-type: none;
+    margin: 5px   5px;  
+    list-style-type: none;
      
 }
 nav ul li a {
@@ -58,13 +61,7 @@ nav ul li a {
     text-transform: uppercase;
     font-family: 'Gotham Black', sans-serif;
     border-radius: 3px;
-    /* font-family: 'Gotham Black', sans-serif;
-     color: white;
-     text-decoration: none;
-     font-size: 20px;
-     padding: 8px;
-     border-radius: 3px;
-     text-transform: uppercase;   */
+
  }
  li .active, li .ny:hover{
     transition: 0.5s;
@@ -111,6 +108,10 @@ li a.active, li a:hover{
     z-index: 3;
     cursor: pointer;
     opacity: 0;
+    
+}
+.barrasMenu input {
+    margin-top: 70px;
 }
  .hamburguesa,
  .barrasMenu {
@@ -200,7 +201,7 @@ header a{
 }
 header a .containerTitulo{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
    
 
 }
@@ -218,94 +219,13 @@ header .containerTitulo h3{
 header .containerTitulo a{
     width: 100%;
 }
-/* nav{
-    background-color:#3E065F;
-    height: 50px;
-    width: 100%;
-    position: sticky;
-    top:0%     
-}
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 50px ;
-    margin: 0   5px;
-    
-}
-nav ul li a {
-
-   font-family: 'Gotham Black', sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 8px;
-    border-radius: 3px;
-    text-transform: uppercase;  
-}
-header .cotainer_imagen{
-    width: 100%;
-    height: 900px;
-}
-.container_imagen .imgPrincipal{
-    height: 500px;
-    width: 1000px;
-
-}
 
 
-li a.active1, li a:hover{
-    transition: 0.5s;
-    background-color: lawngreen;
-} 
-li a.active, li a:hover{
-    transition: .5s;
-    background-color: blueviolet;
-} */
-section{
-    width: 100%;
-    height: 100%;
-    background-color: #3E065F;
-}
-section .column{
-    float:left;
-    width: 100%;
-    height: 70%;
-    
-    background-color: #700B97;
-    padding: 10px;
-    border-radius: 10px
-    
-}
-section .column div{
-    
-    display: flex;
-    justify-content: center;
-    justify-content:space-between;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
-    
-}
-section .column-left{
-   border-style:groove;
-    background-color:#700B97;
-    width: 65%;
-    padding: 10px;
 
-}
-section .column-right{
-   
-    background-color:#3E065F;
-    width: 15%;
-    
-}
 h2{
     text-align: center;
-    color:black;
-    background-color:#700B97;
+    color:rgb(255, 255, 255);
+    background-color:transparent;
     
     font-size: 50px;
 }
@@ -314,10 +234,10 @@ p{
     font-style: inherit;
     font-family:'Gotham Black', sans-serif;
     height: 100%;
-    width: 50%;
+    width: 70%;
     margin-left: 25%;
-    color: black;
-    background-color: #700B97;
+    color: rgb(255, 255, 255);
+    background-color: #793a9200;
 }
 input:hover{
    border-style:groove;
