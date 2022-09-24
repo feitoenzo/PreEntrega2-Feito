@@ -28,8 +28,8 @@ nav{grid-area: nav;
 nav ul {
    
     float: right;
-     border: hidden; 
-     border-radius: 8px;  
+    border: hidden; 
+    border-radius: 8px;  
     display: flex;
     justify-content: center;
     flex-direction: row;    
