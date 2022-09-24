@@ -3,8 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+#grillabody{display: grid;
+    grid-template-areas: 
+    "header header nav"
+    "main main nav"
+    "footer footer nav";
+}
+header{margin:5px; border: 3px solid black; grid-area: header;}
+nav{margin:5px; border: 3px solid black; grid-area: nav;
+    background: linear-gradient(to right, #3E065F, rgb(3, 133, 68));
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top:0%     
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: .5s;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    font-size: 20px;
+    line-height: 1;
+    transition: .3s;
+    text-transform: uppercase;
+    font-family: 'Gotham Black', sans-serif;
+    /* font-family: 'Gotham Black', sans-serif;
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     padding: 8px;
+     border-radius: 3px;
+     text-transform: uppercase;   */
+ }
+main{margin:5px; border: 3px solid black; grid-area: main;}
+footer{margin:5px; border: 3px solid black; grid-area:footer;}
+#grillaMain{display: grid;
+    grid-template-areas:
+    "tituloH2 tituloH2"
+    "parrafoIzq containerInfo";}
+.tituloH2 {margin:5px; border: 3px solid black; grid-area: tituloH2; background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../multimedia/imagenes/murcielagosByn.jpg); color: rgb(186, 6, 241); text-align: center; padding: 10%; background-repeat: no-repeat; background-size: cover; background-position: center ;}
+.parrafoIzq {margin:5px; border: 3px solid black; grid-area: parrafoIzq; text-align: center; padding: 10%;}
+.containerInfo {margin:5px; border: 3px solid black; grid-area: containerInfo;}
+    
 
-body{
+
+
+/* body{
     background-color: #000000; 
     color: white;
 }
@@ -323,4 +378,4 @@ h5{
     font-size: 60px;
     background-color: green;
 
-}
+} */
